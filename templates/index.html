@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron">
+      <h1>AHAM BRAHAMHASMI 🤟</h1>
+      {% if user.is_authenticated %}
+          <h2>Welcome {{ user.username|upper }} 😊 </h2>
+      {% else %}
+          <h2>Welcome to the site!</h2>
+      {% endif %}
+    </div>
+  </div>
+  
+
+{% endblock %}
